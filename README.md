@@ -194,7 +194,7 @@ This element is mandiatory in both AMP and MIP.
 
 ### Loading custom elements
 
-For 
+For loading custom elements that aren't loaded by default.
 
 #### AMP
 
@@ -215,6 +215,8 @@ But `src` is not mandatory:
 ```
 
 ### Loading custom templates
+
+For loading custom templates that aren't loaded by default.
 
 #### AMP
 
