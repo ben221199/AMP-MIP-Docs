@@ -192,4 +192,44 @@ This element is mandiatory in both AMP and MIP.
 
 ## Additionals
 
-TODO
+### Loading custom elements
+
+For 
+
+#### AMP
+
+```html
+<script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
+```
+
+But `src` is not mandatory:
+
+```html
+<script async custom-element="amp-gist"></script>
+```
+
+#### MIP
+
+```html
+<script src="https://c.mipcdn.com/static/v2/mip-mustache/mip-accordion.js"></script>
+```
+
+### Loading custom templates
+
+#### AMP
+
+```html
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+```
+
+But `src` is not mandatory:
+
+```html
+<script async custom-template="amp-mustache"></script>
+```
+
+#### MIP
+
+```html
+<script src="https://c.mipcdn.com/static/v2/mip-mustache/mip-mustache.js"></script>
+```
