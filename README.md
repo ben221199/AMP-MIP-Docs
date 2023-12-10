@@ -6,6 +6,8 @@ Documentation for AMP (Google) and MIP (Baidu).
 
 ### Link to AMP/MIP page
 
+This link tells search engines where to find the AMP/MIP version of the webpage.
+
 #### AMP
 
 ```html
@@ -135,12 +137,42 @@ The engine script should be present and should be asyncronically loaded.
 #### MIP
 
 ```html
+<script async src="https://c.mipcdn.com/static/v1/mip.js"></script>
+```
+
+OR
+
+```html
 <script async src="https://c.mipcdn.com/static/v2/mip.js"></script>
 ```
 
-### Style
+### Style Boilerplate
 
-TODO
+AMP/MIP pages use boilerplate code to disable some CSS rendering until the right moment.
+
+#### AMP
+
+```html
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+```
+
+AND
+
+```
+<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+```
+
+#### MIP
+
+```html
+<link href="https://c.mipcdn.com/static/v1/mip.css" rel="stylesheet" type="text/css">
+```
+
+OR
+
+```html
+<link href="https://c.mipcdn.com/static/v2/mip.css" rel="stylesheet" type="text/css">
+```
 
 ### Body
 
