@@ -158,7 +158,7 @@ AMP/MIP pages use boilerplate code to disable some CSS rendering until the right
 
 AND
 
-```
+```html
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 ```
 
